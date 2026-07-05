@@ -1,0 +1,119 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.welcome-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card h2 {
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.welcome-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.dashboard-cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ==========================
+   Tablet (992px)
+========================== */
+
+@media (max-width: 992px) {
+
+    .dashboard-container {
+        padding: 20px 15px;
+    }
+
+    .dashboard-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .welcome-card {
+        padding: 20px;
+    }
+
+}
+
+/* ==========================
+   Mobile (768px)
+========================== */
+
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .dashboard-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .welcome-card {
+        padding: 18px;
+    }
+
+    .welcome-card h2 {
+        font-size: 22px;
+    }
+
+    .welcome-card p {
+        font-size: 16px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+}
+
+/* ==========================
+   Small Mobile (480px)
+========================== */
+
+@media (max-width: 480px) {
+
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .dashboard-title {
+        font-size: 22px;
+    }
+
+    .welcome-card {
+        padding: 15px;
+    }
+
+    .welcome-card h2 {
+        font-size: 20px;
+    }
+
+    .welcome-card p {
+        font-size: 15px;
+    }
+
+}
